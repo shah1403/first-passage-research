@@ -1,0 +1,29 @@
+source,status,execution
+audit_data.py,parsed,see README; parsing is not a behavioral test
+audited_fp.py,parsed,see README; parsing is not a behavioral test
+audited_fp_runner.py,parsed,see README; parsing is not a behavioral test
+historical/goog_dynamic_stock_test.py,parsed,see README; parsing is not a behavioral test
+historical/goog_rolling_fp_state.py,parsed,see README; parsing is not a behavioral test
+test_audited_fp.py,parsed,see README; parsing is not a behavioral test
+historical/audited_backtester(1).zip::audited_fp.py,parsed,archived; not fully rerun
+historical/audited_backtester(1).zip::audited_fp_runner.py,parsed,archived; not fully rerun
+historical/audited_backtester(1).zip::verify_backtester.py,parsed,archived; not fully rerun
+historical/audited_backtester(1).zip::test_audited_fp.py,parsed,archived; not fully rerun
+historical/audited_backtester(1).zip::locked_fp_trade_time.py,parsed,archived; not fully rerun
+historical/audited_backtester(1).zip::locked_fp_trade_time_kalshi.py,parsed,archived; not fully rerun
+historical/audited_backtester(1).zip::high_fidelity_replay.py,parsed,archived; not fully rerun
+historical/audited_backtester.zip::audited_fp.py,parsed,archived; not fully rerun
+historical/audited_backtester.zip::audited_fp_runner.py,parsed,archived; not fully rerun
+historical/audited_backtester.zip::quick_fp_diagnosis.py,parsed,archived; not fully rerun
+historical/audited_backtester.zip::no_crossing_replay.py,parsed,archived; not fully rerun
+historical/audited_backtester.zip::goog_full_initialization.py,parsed,archived; not fully rerun
+historical/audited_backtester.zip::verify_backtester.py,parsed,archived; not fully rerun
+historical/audited_backtester.zip::tests/test_audited_fp.py,parsed,archived; not fully rerun
+historical/backtester_before_audit.zip::locked_fp_trade_time.py,parsed,archived; not fully rerun
+historical/backtester_before_audit.zip::locked_fp_trade_time_kalshi.py,parsed,archived; not fully rerun
+historical/backtester_before_audit.zip::high_fidelity_replay.py,parsed,archived; not fully rerun
+historical/goog_initialization_rerun.zip::goog_full_initialization.py,parsed,archived; not fully rerun
+historical/hftbacktest_validation_bundle.zip::hft_port/verify_port.py,parsed,archived; not fully rerun
+historical/hftbacktest_validation_bundle.zip::hft_port/convert_to_hftbacktest.py,parsed,archived; not fully rerun
+historical/hftbacktest_validation_bundle.zip::hft_port/run_real_hftbacktest.py,parsed,archived; not fully rerun
+historical/hftbacktest_validation_bundle.zip::hft_port/shadow_hft_validation.py,parsed,archived; not fully rerun

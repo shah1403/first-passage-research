@@ -1,0 +1,53 @@
+test_binary_no_is_purchased_not_stock_shorted (test_audited_fp.AccountingTests.test_binary_no_is_purchased_not_stock_shorted) ... ok
+test_depth_vwap_and_rejection (test_audited_fp.AccountingTests.test_depth_vwap_and_rejection) ... ok
+test_fee_and_quantity_parameters_validate (test_audited_fp.AccountingTests.test_fee_and_quantity_parameters_validate) ... ok
+test_kalshi_known_fees_and_float_boundary (test_audited_fp.AccountingTests.test_kalshi_known_fees_and_float_boundary) ... ok
+test_nse_manual_components (test_audited_fp.AccountingTests.test_nse_manual_components) ... ok
+test_stock_long_short_and_gross_minus_fees (test_audited_fp.AccountingTests.test_stock_long_short_and_gross_minus_fees) ... ok
+test_cli_synthetic_end_to_end_json_output (test_audited_fp.AdapterTests.test_cli_synthetic_end_to_end_json_output) ... ok
+test_goog_keeps_duplicates_and_every_row (test_audited_fp.AdapterTests.test_goog_keeps_duplicates_and_every_row) ... ok
+test_kalshi_keeps_same_book_trades_and_separates_segments (test_audited_fp.AdapterTests.test_kalshi_keeps_same_book_trades_and_separates_segments) ... ok
+test_negative_depth_rejected_without_deleting_row (test_audited_fp.AdapterTests.test_negative_depth_rejected_without_deleting_row) ... ok
+test_nse_keeps_book_trade_alignment (test_audited_fp.AdapterTests.test_nse_keeps_book_trade_alignment) ... ok
+test_proxy_rejected_by_default (test_audited_fp.AdapterTests.test_proxy_rejected_by_default) ... ok
+test_skipped_trade_count_cannot_claim_exact_clock (test_audited_fp.AdapterTests.test_skipped_trade_count_cannot_claim_exact_clock) ... ok
+test_timestamps_must_be_sorted_not_silently_reordered (test_audited_fp.AdapterTests.test_timestamps_must_be_sorted_not_silently_reordered) ... ok
+test_empty_anchors_no_error (test_audited_fp.CausalityTests.test_empty_anchors_no_error) ... ok
+test_expanding_history_carries_across_nonoverlapping_segments (test_audited_fp.CausalityTests.test_expanding_history_carries_across_nonoverlapping_segments) ... ok
+test_feature_prefix_invariance (test_audited_fp.CausalityTests.test_feature_prefix_invariance) ... ok
+test_no_early_publication_even_with_overlap_and_ties (test_audited_fp.CausalityTests.test_no_early_publication_even_with_overlap_and_ties) ... ok
+test_no_overlap_open_positions_and_no_closed_pnl_disguised_as_total (test_audited_fp.CausalityTests.test_no_overlap_open_positions_and_no_closed_pnl_disguised_as_total) ... ok
+test_overlapping_dataset_cannot_duplicate_history (test_audited_fp.CausalityTests.test_overlapping_dataset_cannot_duplicate_history) ... ok
+test_predictions_invariant_under_future_mutation (test_audited_fp.CausalityTests.test_predictions_invariant_under_future_mutation) ... ok
+test_prefix_replay_matches_full_tape_predictions (test_audited_fp.CausalityTests.test_prefix_replay_matches_full_tape_predictions) ... ok
+test_quick_hits_and_zeros_have_equal_count_maturity (test_audited_fp.CausalityTests.test_quick_hits_and_zeros_have_equal_count_maturity) ... ok
+test_sparse_cell_does_not_silently_drop_condition (test_audited_fp.CausalityTests.test_sparse_cell_does_not_silently_drop_condition) ... ok
+test_state_conditioning_learns_separate_cells (test_audited_fp.CausalityTests.test_state_conditioning_learns_separate_cells) ... ok
+test_trade_ledger_reconciles_and_positions_do_not_overlap (test_audited_fp.CausalityTests.test_trade_ledger_reconciles_and_positions_do_not_overlap) ... ok
+test_truncated_hit_can_update_state_but_not_full_window_counts (test_audited_fp.CausalityTests.test_truncated_hit_can_update_state_but_not_full_window_counts) ... ok
+test_unresolved_position_blocks_next_segment (test_audited_fp.CausalityTests.test_unresolved_position_blocks_next_segment) ... ok
+test_entry_uses_five_ms_not_one_row (test_audited_fp.ExecutionTests.test_entry_uses_five_ms_not_one_row) ... ok
+test_late_diagnostic_cannot_change_pnl (test_audited_fp.ExecutionTests.test_late_diagnostic_cannot_change_pnl) ... ok
+test_late_diagnostic_does_not_count_already_correct_prediction (test_audited_fp.ExecutionTests.test_late_diagnostic_does_not_count_already_correct_prediction) ... ok
+test_late_recovery_is_not_correct_first_passage (test_audited_fp.ExecutionTests.test_late_recovery_is_not_correct_first_passage) ... ok
+test_missing_exit_preserves_open_trade (test_audited_fp.ExecutionTests.test_missing_exit_preserves_open_trade) ... ok
+test_no_late_hit_is_censored_not_permanent_wrong_direction (test_audited_fp.ExecutionTests.test_no_late_hit_is_censored_not_permanent_wrong_direction) ... ok
+test_profit_trigger_must_accept_losing_delayed_fill (test_audited_fp.ExecutionTests.test_profit_trigger_must_accept_losing_delayed_fill) ... ok
+test_timeout_gets_latency_even_beyond_fifty (test_audited_fp.ExecutionTests.test_timeout_gets_latency_even_beyond_fifty) ... ok
+test_trades_not_quote_rows_drive_deadline (test_audited_fp.ExecutionTests.test_trades_not_quote_rows_drive_deadline) ... ok
+test_unfilled_entry_not_traded (test_audited_fp.ExecutionTests.test_unfilled_entry_not_traded) ... ok
+test_unfilled_exit_retry_cannot_select_by_profit (test_audited_fp.ExecutionTests.test_unfilled_exit_retry_cannot_select_by_profit) ... ok
+test_end_of_file_is_not_zero_label (test_audited_fp.LabelTests.test_end_of_file_is_not_zero_label) ... ok
+test_fee_covering_label_not_merely_midprice_move (test_audited_fp.LabelTests.test_fee_covering_label_not_merely_midprice_move) ... ok
+test_first_direction_not_eventual_direction (test_audited_fp.LabelTests.test_first_direction_not_eventual_direction) ... ok
+test_hit_exactly_fifty_is_included_and_fifty_one_is_not (test_audited_fp.LabelTests.test_hit_exactly_fifty_is_included_and_fifty_one_is_not) ... ok
+test_insufficient_label_entry_depth_is_not_zero (test_audited_fp.LabelTests.test_insufficient_label_entry_depth_is_not_zero) ... ok
+test_invalid_book_censors_instead_of_hiding_earlier_passage (test_audited_fp.LabelTests.test_invalid_book_censors_instead_of_hiding_earlier_passage) ... ok
+test_positive_label_is_opportunity_not_fill_promise (test_audited_fp.LabelTests.test_positive_label_is_opportunity_not_fill_promise) ... ok
+test_random_paths_against_independent_scalar_reference (test_audited_fp.LabelTests.test_random_paths_against_independent_scalar_reference) ... ok
+test_same_delayed_entry_as_replay (test_audited_fp.LabelTests.test_same_delayed_entry_as_replay) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 3.831s
+
+OK

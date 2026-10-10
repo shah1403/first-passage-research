@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "dataset": "TATAMOTORS 10000 snapshots",
+  "comparison": "all predictions and primary economic summaries identical with optional late diagnostics disabled",
+  "fields": [
+    "closed_trades",
+    "gross_closed",
+    "fees_closed",
+    "net_closed",
+    "unresolved_positions",
+    "labels_censored"
+  ]
+}
