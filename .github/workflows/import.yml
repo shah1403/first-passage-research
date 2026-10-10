@@ -1,0 +1,48 @@
+name: Organize research repository
+on:
+  push:
+    paths:
+      - '.github/workflows/import.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  organize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download verified release package
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download research-package-v1 --repo "${{ github.repository }}" --pattern '*.zip' --output _import.zip
+      - name: Verify and unpack project
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib,zipfile,json
+          root=Path.cwd()
+          parts=sorted(root.glob('_import.part*'))
+          archive=root/'_import.zip'
+          assert hashlib.file_digest(archive.open('rb'),'sha256').hexdigest()==(root/'IMPORT_SHA256.txt').read_text().strip()
+          with zipfile.ZipFile(archive) as z:
+              for item in z.infolist():
+                  target=(root/item.filename).resolve()
+                  assert target.is_relative_to(root) and '.git' not in target.relative_to(root).parts
+              z.extractall(root)
+          archive.unlink()
+          for p in parts: p.unlink()
+          (root/'IMPORT_SHA256.txt').unlink()
+          (root/'.gitattributes').write_text('*.npz binary\n*.parquet binary\n*.gz binary\n*.zip binary\n*.png binary\n*.pdf binary\n')
+          records=[]
+          for p in sorted(root.rglob('*')):
+              if p.is_file() and '.git' not in p.relative_to(root).parts and p.name!='MANIFEST.json':
+                  records.append(dict(path=str(p.relative_to(root)),bytes=p.stat().st_size,sha256=hashlib.file_digest(p.open('rb'),'sha256').hexdigest()))
+          (root/'MANIFEST.json').write_text(json.dumps(records,indent=2))
+          PY
+      - name: Commit organized project
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Organize source, datasets, audit and project visualization'
+          git push
