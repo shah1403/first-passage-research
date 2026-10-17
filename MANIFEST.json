@@ -16,8 +16,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 3947,
-    "sha256": "38761eb8c3854c4f0d79a40957cc6ebe9f4552af62372df617273874767e0631"
+    "bytes": 3627,
+    "sha256": "85b2fc9cfd40699374f7ba85953f7acc5684ce5e73a460803adaf9fd61c9ed7f"
   },
   {
     "path": "audit_data.py",
@@ -156,13 +156,18 @@
   },
   {
     "path": "docs/explorer.html",
-    "bytes": 311266,
-    "sha256": "151c493a1057f7cb85dfe34f4773be06ae898bbec1865477b9bdeb437ce0f33a"
+    "bytes": 6722,
+    "sha256": "62f9762780d9d1ad2b032cbe437157e57034db7ff4f4e8dbf2708e1260214bf3"
   },
   {
     "path": "docs/preview.png",
     "bytes": 71641,
     "sha256": "480ce328a183e4e8962ebdaf51eb786aed1ef0ba1228c3ba3520257cbb0f879f"
+  },
+  {
+    "path": "docs/technical-explorer.html",
+    "bytes": 336631,
+    "sha256": "9fd4206911dd70b976ef4c553513fc3a94f220c9eb3ee390eef320ecf1be3ee0"
   },
   {
     "path": "historical/audited_backtester(1).zip",
