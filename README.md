@@ -2,6 +2,9 @@
 
 A Python research framework for predicting fee-covering first-passage states from order-book imbalance and recent state history.
 
+
+![Research overview](docs/preview.png)
+
 ## Research contributions
 
 - Causal rolling distributions with explicit label maturity over a **50-quote-update horizon**.
@@ -55,3 +58,4 @@ The optional --skip-late-diagnostics flag skips rest-of-session recovery diagnos
 - [Implementation history and methodology](docs/PRIOR_AUDIT.md).
 
 By Aarush Shah.
+

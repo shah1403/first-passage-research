@@ -16,8 +16,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 5155,
-    "sha256": "bbb44ef2a466e53d008ce5b603dfc2089a3adf551e8bd184ed3f2c6d6775cd9e"
+    "bytes": 3947,
+    "sha256": "38761eb8c3854c4f0d79a40957cc6ebe9f4552af62372df617273874767e0631"
   },
   {
     "path": "audit_data.py",
@@ -146,8 +146,8 @@
   },
   {
     "path": "docs/PRIOR_AUDIT.md",
-    "bytes": 10877,
-    "sha256": "fb8798da2759015cfa20f6d7a39522b73fd2c786e2b7a09612d42ae481c01a98"
+    "bytes": 10886,
+    "sha256": "67678a5fb604711c2089255b3122ef6e2df197f71fe41d04b1ac88c7fcf996f3"
   },
   {
     "path": "docs/VERIFIED_CV_WORDING.md",
@@ -156,13 +156,13 @@
   },
   {
     "path": "docs/explorer.html",
-    "bytes": 334874,
-    "sha256": "e51656214c491ec15c12a70e7a3be6ce897086e138450bceb3284ecca11f4650"
+    "bytes": 311266,
+    "sha256": "151c493a1057f7cb85dfe34f4773be06ae898bbec1865477b9bdeb437ce0f33a"
   },
   {
     "path": "docs/preview.png",
-    "bytes": 124728,
-    "sha256": "20fed4500566425ec020d240e6bbee916c86b6076778a1f373dbb9c296cb7a43"
+    "bytes": 71641,
+    "sha256": "480ce328a183e4e8962ebdaf51eb786aed1ef0ba1228c3ba3520257cbb0f879f"
   },
   {
     "path": "historical/audited_backtester(1).zip",
