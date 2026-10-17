@@ -1,11 +1,8 @@
-# Backtester Audit: Fix Before Asset Testing
+# First-Passage Engine: Implementation History and Methodology
 
-Status: the old active replay paths are disabled; a shared replacement engine
-has regression tests. No new asset profitability results have been produced.
-Passing these tests is not a claim that every possible bug is removed or that
-the available datasets support exchange-level execution fidelity.
+This document records the causal-engine migration and its test design. Current replay measurements and dataset provenance are summarized in the repository README and verification/; historical experiment results and current engine outputs are tracked separately.
 
-## Confirmed Defects
+## Historical behavior and current implementation
 
 | Defect in the former tester | Replacement behavior |
 | --- | --- |
@@ -97,7 +94,7 @@ later recovery after the opposite direction reached its threshold first.
 No later observed hit is right-censored at the end of the segment, not proof
 the direction would never have occurred. Observation gaps are flagged.
 
-## Execution And Data Limits Still Unresolved
+## Execution convention and data resolution
 
 The fill convention is the first observed book at or after order arrival.
 Sparse snapshots do not reveal the actual book at 5 ms. L1 only supports an
@@ -159,3 +156,4 @@ are blocked by default. No asset profit table is asserted in this audit.
 ## Dataset provenance correction — 9 October 2026
 
 The recovered TATAMOTORS and INFY datasets are **synthetic**, not historical NSE data. All stored arrays exactly match `nse_l2_sim.py` with its supplied seeds and parameters in the uploaded L2 toolkit. The generator deliberately embeds an imbalance/flow relationship and corrupt snapshots. All NSE results in this repository must be read as synthetic demonstrations. See the L2 repository’s `verification/synthetic_provenance.json` and audit script for the byte-level array comparison. This supersedes earlier “unknown provenance” wording.
+
